@@ -1,0 +1,29 @@
+.container-fluid{
+    background-color: #111827;
+}
+.paragraph{
+    text-align: justify;
+    font-size: 19px;
+    font-family: 'Lucida Sans',sans-serif;
+    line-height: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+h1{
+    font-family: 'Lucida Sans';
+    font-weight: 700;
+}
+.card{
+    /* background-color: rgba(254, 254, 254, 0.901); */
+    background-color: #9CA3AF;
+    border: 1px solid #4c4949 !important;
+    border: none;
+    box-shadow: 10px 10px 25px rgb(253, 242, 242);
+}
+
+.card-image{
+    object-fit: contain; 
+    border-radius: 8px;
+    width: 100%;
+}
+

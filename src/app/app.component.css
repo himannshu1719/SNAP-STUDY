@@ -1,0 +1,32 @@
+nav{
+    position: fixed;
+    width: 100%;
+/* background-color:   white !important;    */
+background-color: #1e293b !important;
+padding: 15px; 
+z-index: 1000;
+border-bottom: 2px solid grey;
+box-shadow: 0px 4px 15px rgb(0, 0, 0);
+}
+nav a{
+    color: rgb(66, 201, 33);
+    font-weight: 800;
+}
+nav ul li a{
+    color: #ddd1d1;
+    font-weight: 600;
+}
+.nav-dropdown{
+    background-color: gray;
+}
+.dropdown-item{
+    color: black !important;
+}
+.btn{
+    width: 120px;
+    height: 40px;
+    color: white;
+    background-color: transparent ;
+    border: 2px solid #ddd1d1;
+    font-weight: 500;
+}

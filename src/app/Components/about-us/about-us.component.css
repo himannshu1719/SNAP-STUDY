@@ -14,11 +14,12 @@ h1{
     font-weight: 700;
 }
 .card{
-    /* background-color: rgba(254, 254, 254, 0.901); */
-    background-color: #9CA3AF;
+    
+    background-color: #81818173;
     border: 1px solid #4c4949 !important;
     border: none;
-    box-shadow: 10px 10px 25px rgb(253, 242, 242);
+    color: white;
+    box-shadow: 5px 5px 15px rgb(253, 242, 242);
 }
 
 .card-image{

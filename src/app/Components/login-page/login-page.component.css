@@ -1,0 +1,28 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111827;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background: #98a9cd;
+    border-radius: 7px;
+}
+
+.form-heading{
+    font-size: 25px;
+    font-weight: 600;
+}
+.form-control,.btn{
+    height: 45px;
+}
+.login-btn{
+    background-color: blue;
+    color: white;
+    border: none;
+}

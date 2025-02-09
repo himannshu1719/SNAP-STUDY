@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { ContactUsHeaderComponent } from './Components/contact-us-header/contact-us-header.component';
 import { HomeComponent } from './Components/home/home.component';
 @Component({
@@ -10,4 +10,16 @@ import { HomeComponent } from './Components/home/home.component';
 })
 export class AppComponent {
   title = 'SnapStudy';
+
+constructor(private router:Router){}
+
+
+
+
+  goToLogin(){
+    this.router.navigate(['/Login-page']);
+
+  }
+
+
 }

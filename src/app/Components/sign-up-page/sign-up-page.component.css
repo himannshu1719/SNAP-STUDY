@@ -1,0 +1,54 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111827;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    max-height: 500px;
+    padding: 2rem;
+    background: #b2bfda;
+    border-radius: 6px;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    opacity: 0; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 7px;
+}
+
+.scrolling::-webkit-scrollbar-track {
+    opacity: 1;
+}
+
+.form-heading {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.form-control,
+.btn {
+    height: 45px;
+}
+
+.signup-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+}

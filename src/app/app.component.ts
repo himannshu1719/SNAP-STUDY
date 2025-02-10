@@ -18,7 +18,9 @@ constructor(private router:Router){}
 
   goToLogin(){
     this.router.navigate(['/Login-page']);
-
+  }
+  goToSignup(){
+    this.router.navigate(['/Signup-page']);
   }
 
 

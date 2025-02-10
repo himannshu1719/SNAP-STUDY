@@ -1,0 +1,42 @@
+<div class="container-fluid main-container ">
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="signup-container">
+            <div class="form-heading text-center mb-3 fw-bolder">SIGN UP </div>
+
+            
+            <div class="mb-3">
+                <label for="firstname" class="form-label fw-bold">First Name</label>
+                <input type="text" class="form-control " id="firstname" formControlName="firstname"  >
+            </div>
+
+            <div class="mb-3">
+                <label for="lastname" class="form-label fw-bold">Last Name</label>
+                <input type="text" class="form-control " id="lastname" formControlName="lastname"  >
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label fw-bold">Email </label>
+                <input type="email" class="form-control " id="email" formControlName="email" >
+            </div>
+
+            <div class="mb-3">
+                <label for="phonenumber" class="form-label fw-bold">Phone Number </label>
+                <input type="text" class="form-control " id="phonenumber" formControlName="phonenumber" maxlength="10" >
+            </div>
+            
+            <div class="mb-3">
+                <label for="password" class="form-label fw-bold">Password</label>
+                <input type="password" class="form-control" id="password" formControlName="password" maxlength="6">
+            </div>
+
+            <div class="mb-3">
+                <label for="confirmpassword" class="form-label fw-bold">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmpassword" formControlName="confirmpassword"maxlength="6" >
+            </div>
+    
+            <button type="submit" class="btn  signup-btn w-100 mt-3 fw-bold" [disabled]="loginForm.invalid">Sign up</button>
+        </form>
+    </div>
+
+</div>

@@ -1,5 +1,5 @@
 .container-fluid{
-    background-color: #111827;
+    background-color:rgb(226, 224, 224);; 
 }
 .paragraph{
     text-align: justify;
@@ -12,14 +12,11 @@
 h1{
     font-family: 'Lucida Sans';
     font-weight: 700;
+    color: #7E22CE;
 }
 .card{
-    
-    background-color: #81818173;
-    border: 1px solid #4c4949 !important;
     border: none;
-    color: white;
-    box-shadow: 5px 5px 15px rgb(253, 242, 242);
+    background-color: white;
 }
 
 .card-image{

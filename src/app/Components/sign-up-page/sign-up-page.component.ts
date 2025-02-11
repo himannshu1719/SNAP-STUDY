@@ -8,7 +8,7 @@ import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angula
   styleUrl: './sign-up-page.component.css'
 })
 export class SignUpPageComponent {
- loginForm=new FormGroup({
+  signupForm=new FormGroup({
     firstname:new FormControl('',[Validators.required]),
     lastname:new FormControl('',[Validators.required]),
     phonenumber:new FormControl('',[Validators.required, Validators.maxLength(10)]),
@@ -19,8 +19,8 @@ export class SignUpPageComponent {
   });
 
   onSubmit() {
-    if (this.loginForm.valid) {
-      console.log('Form Submitted', this.loginForm.value);
+    if (this.signupForm.valid) {
+      console.log('Form Submitted', this.signupForm.value);
     }
   }
 }

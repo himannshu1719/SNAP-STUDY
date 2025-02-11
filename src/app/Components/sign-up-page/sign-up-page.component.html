@@ -1,41 +1,48 @@
 <div class="container-fluid main-container ">
 
     <div class="container d-flex justify-content-center align-items-center vh-100">
-        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="signup-container">
-            <div class="form-heading text-center mb-3 fw-bolder">SIGN UP </div>
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="signup-container">
+            <div class="form-heading text-center mb-3 ">SIGN UP </div>
 
             
             <div class="mb-3">
-                <label for="firstname" class="form-label fw-bold">First Name</label>
+                <label for="firstname" class="form-label ">First Name</label>
                 <input type="text" class="form-control " id="firstname" formControlName="firstname"  >
+                <div *ngIf="signupForm.controls['firstname'].invalid && (signupForm.controls['firstname'].touched || signupForm.controls['firstname'].dirty)">
+                    <p class="empty-alert" > <span class="fa fa-info-circle error-info-icon mr-1"></span> Please fill this field to continue  </p>
+                </div>
             </div>
 
+
             <div class="mb-3">
-                <label for="lastname" class="form-label fw-bold">Last Name</label>
+                <label for="lastname" class="form-label ">Last Name</label>
                 <input type="text" class="form-control " id="lastname" formControlName="lastname"  >
             </div>
+            <div *ngIf="signupForm.controls['lastname'].invalid && (signupForm.controls['lastname'].touched || signupForm.controls['lastname'].dirty)">
+                <p class="empty-alert" > <span class="fa fa-info-circle error-info-icon mr-1"></span> Please fill this field to continue  </p>
+            </div>
 
             <div class="mb-3">
-                <label for="email" class="form-label fw-bold">Email </label>
+                <label for="email" class="form-label  ">Email </label>
                 <input type="email" class="form-control " id="email" formControlName="email" >
             </div>
 
             <div class="mb-3">
-                <label for="phonenumber" class="form-label fw-bold">Phone Number </label>
+                <label for="phonenumber" class="form-label ">Phone Number </label>
                 <input type="text" class="form-control " id="phonenumber" formControlName="phonenumber" maxlength="10" >
             </div>
             
             <div class="mb-3">
-                <label for="password" class="form-label fw-bold">Password</label>
+                <label for="password" class="form-label ">Password</label>
                 <input type="password" class="form-control" id="password" formControlName="password" maxlength="6">
             </div>
 
             <div class="mb-3">
-                <label for="confirmpassword" class="form-label fw-bold">Confirm Password</label>
+                <label for="confirmpassword" class="form-label ">Confirm Password</label>
                 <input type="password" class="form-control" id="confirmpassword" formControlName="confirmpassword"maxlength="6" >
             </div>
     
-            <button type="submit" class="btn  signup-btn w-100 mt-3 fw-bold" [disabled]="loginForm.invalid">Sign up</button>
+            <button type="submit" class="btn  signup-btn w-100 mt-3 " [disabled]="loginForm.invalid">Sign up</button>
         </form>
     </div>
 

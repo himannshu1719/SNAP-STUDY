@@ -1,32 +1,36 @@
-nav{
+nav {
     position: fixed;
     width: 100%;
-/* background-color:   white !important;    */
-background-color: #101825 !important;
-padding: 15px; 
-z-index: 1000;
-border-bottom: 2px solid grey;
-box-shadow: 0px 4px 15px rgb(253, 204, 204);
+    background-color: white !important;
+    padding: 15px;
+    z-index: 1000;
+    border-bottom: 2px solid grey;
+    box-shadow: 0px 4px 15px rgb(135, 135, 135);
 }
-nav a{
+
+nav a {
     color: rgb(66, 201, 33);
     font-weight: 800;
 }
-nav ul li a{
-    color: #ddd1d1;
+
+nav ul li a {
+    color: #656565;
     font-weight: 600;
 }
-.nav-dropdown{
+
+.nav-dropdown {
     background-color: gray;
 }
-.dropdown-item{
+
+.dropdown-item {
     color: black !important;
 }
-.btn{
+
+.btn {
     width: 120px;
     height: 40px;
-    color: white;
-    background-color: transparent ;
-    border: 2px solid #ddd1d1;
+    color: #656565;
+    background-color: transparent;
+    border: 2px solid #656565;
     font-weight: 500;
 }

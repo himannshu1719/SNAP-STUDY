@@ -3,15 +3,17 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #111827;
-}
+    background-image: url('/assets/images/backless.png');
+    }
 
 .signup-container {
     width: 100%;
-    max-width: 400px;
-    max-height: 500px;
+    margin-top: 50px;
+    max-width: 450px;
+    max-height: 600px;
     padding: 2rem;
-    background: #b2bfda;
+    background: white ;
+    border: 2px solid #269c2f;
     border-radius: 6px;
     overflow-y: auto;
 }
@@ -39,16 +41,34 @@
 
 .form-heading {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
+    color: #269c2f;
 }
-
+input {
+    background-color: white;
+}
 .form-control,
 .btn {
     height: 45px;
 }
-
+.form-control{
+    border: 1px solid #656565;
+}
+.form-label{
+    color: #269c2f;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: -50px;
+}
 .signup-btn {
-    background-color: blue;
+    background-color: #269c2f;
+    opacity: 1;
     color: white;
     border: none;
+}
+
+
+.empty-alert{
+    color: red;
+    font-size: 12px;
 }

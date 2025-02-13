@@ -19,7 +19,11 @@ nav ul li a {
 }
 
 .nav-dropdown {
-    background-color: gray;
+    background-color: whitesmoke;
+}
+.dropdown-item:hover {
+    background-color: rgb(66, 201, 33); /* Your desired hover color */
+    color: white; /* Optional: Change text color on hover */
 }
 
 .dropdown-item {
